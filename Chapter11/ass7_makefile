@@ -1,0 +1,10 @@
+obj = ass7.o complex0.o
+
+a.out : $(obj)
+	g++  -o a.out $(obj)
+
+ass7.o : complex0.h
+complex0.o : complex0.h
+
+clean:
+	rm a.out $(obj)

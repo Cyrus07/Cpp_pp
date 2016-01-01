@@ -1,0 +1,10 @@
+obj = ass2.o ass2_person.o
+
+a.out : $(obj)
+	g++ $(obj) -o a.out
+
+ass2.o : ass2_person.h
+ass2_person.o : ass2_person.h
+
+clean:
+	rm $(obj) a.out

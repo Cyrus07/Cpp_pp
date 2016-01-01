@@ -1,0 +1,10 @@
+obj = ass4.o ass4_sale.o 
+
+a.out : $(obj)
+	g++ -std=c++11 $(obj) -o a.out
+
+ass4.o : ass4_sale.h
+ass4_sale.o : ass4_sale.h
+
+clean:
+	rm a.out $(obj)

@@ -1,0 +1,10 @@
+obj = ass2.o vector_v2.o
+
+a.out : $(obj)
+	g++ -std=c++11 $(obj) -o a.out
+
+ass2.o : vector_v2.h
+vector_v2.o : vector_v2.h
+
+clean : 
+	rm $(obj) a.out

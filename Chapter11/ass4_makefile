@@ -1,0 +1,10 @@
+obj = ass4.o time.o
+
+a.out : $(obj)
+	g++ $(obj) -o a.out
+
+ass4.o : time.h
+time.o : time.h
+
+clean: 
+	rm $(obj) a.out

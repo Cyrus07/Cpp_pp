@@ -1,0 +1,9 @@
+obj = ass6.o stonewt_v3.o
+a.out : $(obj)
+	g++	 -o a.out $(obj)
+
+ass6.o : stonewt_v3.h
+stonewt_v3.o : stonewt_v3.h
+
+clean:
+	rm a.out $(obj)

@@ -1,0 +1,10 @@
+obj = ass6.o ass6_move.o
+
+a.out : $(obj)
+	g++ $(obj) -o a.out
+
+ass6.o : ass6_move.h
+ass6_move.o : ass6_move.h
+
+clean:
+	rm $(obj) a.out

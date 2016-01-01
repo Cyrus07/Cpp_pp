@@ -1,0 +1,10 @@
+obj = ass1.o ass1_bankaccount.o
+
+a.out : $(obj)
+	g++ $(obj) -o a.out
+
+ass1.o : ass1_bankaccount.h
+ass1_bankaccount.o : ass1_bankaccount.h
+
+clean :
+	rm $(obj) a.out

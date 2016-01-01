@@ -1,0 +1,504 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACCTABC_H_	acctabc.h	4;"	d
+AcctABC	acctabc.cpp	/^AcctABC::AcctABC(const string & s, long an, double bal)$/;"	f	class:AcctABC	signature:(const string & s, long an, double bal)
+AcctABC	acctabc.h	/^	AcctABC(const std::string & s = "Nullbody", long an = -1,$/;"	p	class:AcctABC	access:public	signature:(const std::string & s = Ó, long an = -1, double bal = 0.0)
+AcctABC	acctabc.h	/^class AcctABC$/;"	c
+AcctABC::AcctABC	acctabc.cpp	/^AcctABC::AcctABC(const string & s, long an, double bal)$/;"	f	class:AcctABC	signature:(const string & s, long an, double bal)
+AcctABC::AcctABC	acctabc.h	/^	AcctABC(const std::string & s = "Nullbody", long an = -1,$/;"	p	class:AcctABC	access:public	signature:(const std::string & s = Ó, long an = -1, double bal = 0.0)
+AcctABC::AcctNum	acctabc.h	/^	long AcctNum() const {return acctNum; }$/;"	f	class:AcctABC	access:protected	signature:() const
+AcctABC::Balance	acctabc.h	/^	double Balance() const {return balance; }$/;"	f	class:AcctABC	access:public	signature:() const
+AcctABC::Deposit	acctabc.cpp	/^void AcctABC::Deposit(double amt)$/;"	f	class:AcctABC	signature:(double amt)
+AcctABC::Deposit	acctabc.h	/^	void Deposit(double amt);$/;"	p	class:AcctABC	access:public	signature:(double amt)
+AcctABC::Formatting	acctabc.h	/^	struct Formatting$/;"	s	class:AcctABC	access:protected
+AcctABC::Formatting::flag	acctabc.h	/^		std::ios_base::fmtflags flag;$/;"	m	struct:AcctABC::Formatting	access:public
+AcctABC::Formatting::pr	acctabc.h	/^		std::streamsize pr;$/;"	m	struct:AcctABC::Formatting	access:public
+AcctABC::FullName	acctabc.h	/^	const std::string & FullName() const {return fullName; }$/;"	f	class:AcctABC	access:protected	signature:() const
+AcctABC::Restore	acctabc.cpp	/^void AcctABC::Restore(Formatting & f) const$/;"	f	class:AcctABC	signature:(Formatting & f) const
+AcctABC::Restore	acctabc.h	/^	void Restore(Formatting & f) const;$/;"	p	class:AcctABC	access:protected	signature:(Formatting & f) const
+AcctABC::SetFormat	acctabc.cpp	/^AcctABC::Formatting AcctABC::SetFormat() const$/;"	f	class:AcctABC	signature:() const
+AcctABC::SetFormat	acctabc.h	/^	Formatting SetFormat() const;$/;"	p	class:AcctABC	access:protected	signature:() const
+AcctABC::ViewAcct	acctabc.h	/^	virtual void ViewAcct() const = 0;$/;"	p	class:AcctABC	access:public	signature:() const
+AcctABC::Withdraw	acctabc.cpp	/^void AcctABC::Withdraw(double amt)$/;"	f	class:AcctABC	signature:(double amt)
+AcctABC::Withdraw	acctabc.h	/^	virtual void Withdraw(double amt) = 0;$/;"	p	class:AcctABC	access:public	signature:(double amt)
+AcctABC::acctNum	acctabc.h	/^	long acctNum;$/;"	m	class:AcctABC	access:private
+AcctABC::balance	acctabc.h	/^	double balance;$/;"	m	class:AcctABC	access:private
+AcctABC::fullName	acctabc.h	/^	std::string fullName;$/;"	m	class:AcctABC	access:private
+AcctABC::~AcctABC	acctabc.h	/^	virtual ~AcctABC() {}$/;"	f	class:AcctABC	access:public	signature:()
+AcctNum	acctabc.h	/^	long AcctNum() const {return acctNum; }$/;"	f	class:AcctABC	access:protected	signature:() const
+BRASS_H_	brass.h	3;"	d
+Balance	acctabc.h	/^	double Balance() const {return balance; }$/;"	f	class:AcctABC	access:public	signature:() const
+Balance	brass.cpp	/^double Brass::Balance() const$/;"	f	class:Brass	signature:() const
+Balance	brass.h	/^	double Balance() const;$/;"	p	class:Brass	access:public	signature:() const
+Brass	acctabc.h	/^	Brass(const std::string & s = "Nullbody", long an = -1,$/;"	f	class:Brass	access:public	signature:(const std::string & s = Ó, long an = -1, double bal = 0.0)
+Brass	acctabc.h	/^class Brass : public AcctABC$/;"	c	inherits:AcctABC
+Brass	brass.cpp	/^Brass::Brass(const string & s, long an, double bal)$/;"	f	class:Brass	signature:(const string & s, long an, double bal)
+Brass	brass.h	/^	Brass(const std::string & s = "Nullbody", long an = -1, double bal = 0.0);$/;"	p	class:Brass	access:public	signature:(const std::string & s = Ó, long an = -1, double bal = 0.0)
+Brass	brass.h	/^class Brass$/;"	c
+Brass::Balance	brass.cpp	/^double Brass::Balance() const$/;"	f	class:Brass	signature:() const
+Brass::Balance	brass.h	/^	double Balance() const;$/;"	p	class:Brass	access:public	signature:() const
+Brass::Brass	acctabc.h	/^	Brass(const std::string & s = "Nullbody", long an = -1,$/;"	f	class:Brass	access:public	signature:(const std::string & s = Ó, long an = -1, double bal = 0.0)
+Brass::Brass	brass.cpp	/^Brass::Brass(const string & s, long an, double bal)$/;"	f	class:Brass	signature:(const string & s, long an, double bal)
+Brass::Brass	brass.h	/^	Brass(const std::string & s = "Nullbody", long an = -1, double bal = 0.0);$/;"	p	class:Brass	access:public	signature:(const std::string & s = Ó, long an = -1, double bal = 0.0)
+Brass::Deposit	brass.cpp	/^void Brass::Deposit(double amt)$/;"	f	class:Brass	signature:(double amt)
+Brass::Deposit	brass.h	/^	void Deposit(double amt);$/;"	p	class:Brass	access:public	signature:(double amt)
+Brass::ViewAcct	acctabc.cpp	/^void Brass::ViewAcct() const$/;"	f	class:Brass	signature:() const
+Brass::ViewAcct	acctabc.h	/^	virtual void ViewAcct() const;$/;"	p	class:Brass	access:public	signature:() const
+Brass::ViewAcct	brass.cpp	/^void Brass::ViewAcct() const$/;"	f	class:Brass	signature:() const
+Brass::ViewAcct	brass.h	/^	virtual void ViewAcct() const;$/;"	p	class:Brass	access:public	signature:() const
+Brass::Withdraw	acctabc.cpp	/^void Brass::Withdraw(double amt)$/;"	f	class:Brass	signature:(double amt)
+Brass::Withdraw	acctabc.h	/^	virtual void Withdraw(double amt);$/;"	p	class:Brass	access:public	signature:(double amt)
+Brass::Withdraw	brass.cpp	/^void Brass::Withdraw(double amt)$/;"	f	class:Brass	signature:(double amt)
+Brass::Withdraw	brass.h	/^	virtual void Withdraw(double amt);$/;"	p	class:Brass	access:public	signature:(double amt)
+Brass::acctNum	brass.h	/^	long acctNum;$/;"	m	class:Brass	access:private
+Brass::balance	brass.h	/^	double balance;$/;"	m	class:Brass	access:private
+Brass::fullName	brass.h	/^	std::string fullName;$/;"	m	class:Brass	access:private
+Brass::~Brass	acctabc.h	/^	virtual ~Brass() {}$/;"	f	class:Brass	access:public	signature:()
+Brass::~Brass	brass.h	/^	virtual ~Brass() {};$/;"	f	class:Brass	access:public	signature:()
+BrassPlus	acctabc.cpp	/^BrassPlus::BrassPlus(const Brass & ba, double ml, double r) : AcctABC(ba)$/;"	f	class:BrassPlus	signature:(const Brass & ba, double ml, double r)
+BrassPlus	acctabc.cpp	/^BrassPlus::BrassPlus(const string & s, long an, double bal,$/;"	f	class:BrassPlus	signature:(const string & s, long an, double bal, double ml, double r)
+BrassPlus	acctabc.h	/^	BrassPlus(const Brass & ba, double ml = 500, double r = 0.1);$/;"	p	class:BrassPlus	access:public	signature:(const Brass & ba, double ml = 500, double r = 0.1)
+BrassPlus	acctabc.h	/^	BrassPlus(const std::string & s = "Nullbody", long an = -1,$/;"	p	class:BrassPlus	access:public	signature:(const std::string & s = Ó, long an = -1, double bal = 0.0, double ml = 500, double r = 0.10)
+BrassPlus	acctabc.h	/^class BrassPlus : public AcctABC$/;"	c	inherits:AcctABC
+BrassPlus	brass.cpp	/^BrassPlus::BrassPlus(const Brass & ba, double ml, double r) : Brass(ba)$/;"	f	class:BrassPlus	signature:(const Brass & ba, double ml, double r)
+BrassPlus	brass.cpp	/^BrassPlus::BrassPlus(const string & s, long an, double bal,$/;"	f	class:BrassPlus	signature:(const string & s, long an, double bal, double ml, double r)
+BrassPlus	brass.h	/^	BrassPlus(const Brass & ba, double ml = 500, double r = 0.11125);$/;"	p	class:BrassPlus	access:public	signature:(const Brass & ba, double ml = 500, double r = 0.11125)
+BrassPlus	brass.h	/^	BrassPlus(const std::string & s = "Nullbody", long an = -1,$/;"	p	class:BrassPlus	access:public	signature:(const std::string & s = Ó, long an = -1, double bal = 0.0, double ml = 500, double r = 0.11125)
+BrassPlus	brass.h	/^class BrassPlus : public Brass$/;"	c	inherits:Brass
+BrassPlus::BrassPlus	acctabc.cpp	/^BrassPlus::BrassPlus(const Brass & ba, double ml, double r) : AcctABC(ba)$/;"	f	class:BrassPlus	signature:(const Brass & ba, double ml, double r)
+BrassPlus::BrassPlus	acctabc.cpp	/^BrassPlus::BrassPlus(const string & s, long an, double bal,$/;"	f	class:BrassPlus	signature:(const string & s, long an, double bal, double ml, double r)
+BrassPlus::BrassPlus	acctabc.h	/^	BrassPlus(const Brass & ba, double ml = 500, double r = 0.1);$/;"	p	class:BrassPlus	access:public	signature:(const Brass & ba, double ml = 500, double r = 0.1)
+BrassPlus::BrassPlus	acctabc.h	/^	BrassPlus(const std::string & s = "Nullbody", long an = -1,$/;"	p	class:BrassPlus	access:public	signature:(const std::string & s = Ó, long an = -1, double bal = 0.0, double ml = 500, double r = 0.10)
+BrassPlus::BrassPlus	brass.cpp	/^BrassPlus::BrassPlus(const Brass & ba, double ml, double r) : Brass(ba)$/;"	f	class:BrassPlus	signature:(const Brass & ba, double ml, double r)
+BrassPlus::BrassPlus	brass.cpp	/^BrassPlus::BrassPlus(const string & s, long an, double bal,$/;"	f	class:BrassPlus	signature:(const string & s, long an, double bal, double ml, double r)
+BrassPlus::BrassPlus	brass.h	/^	BrassPlus(const Brass & ba, double ml = 500, double r = 0.11125);$/;"	p	class:BrassPlus	access:public	signature:(const Brass & ba, double ml = 500, double r = 0.11125)
+BrassPlus::BrassPlus	brass.h	/^	BrassPlus(const std::string & s = "Nullbody", long an = -1,$/;"	p	class:BrassPlus	access:public	signature:(const std::string & s = Ó, long an = -1, double bal = 0.0, double ml = 500, double r = 0.11125)
+BrassPlus::OwesBank	brass.h	/^	void OwesBank() {owesBank = 0; }$/;"	f	class:BrassPlus	access:public	signature:()
+BrassPlus::ResetMax	acctabc.h	/^	void ResetMax(double m) {maxLoan = m; }$/;"	f	class:BrassPlus	access:public	signature:(double m)
+BrassPlus::ResetMax	brass.h	/^	void ResetMax(double m) {maxLoan = m; }$/;"	f	class:BrassPlus	access:public	signature:(double m)
+BrassPlus::ResetOwes	acctabc.h	/^	void ResetOwes() {owesBank = 0; }$/;"	f	class:BrassPlus	access:public	signature:()
+BrassPlus::ResetRate	acctabc.h	/^	void ResetRate(double r) {rate = r; }$/;"	f	class:BrassPlus	access:public	signature:(double r)
+BrassPlus::ResetRate	brass.h	/^	void ResetRate(double r) {rate = r; }$/;"	f	class:BrassPlus	access:public	signature:(double r)
+BrassPlus::ViewAcct	acctabc.cpp	/^void BrassPlus::ViewAcct() const$/;"	f	class:BrassPlus	signature:() const
+BrassPlus::ViewAcct	acctabc.h	/^	virtual void ViewAcct() const;$/;"	p	class:BrassPlus	access:public	signature:() const
+BrassPlus::ViewAcct	brass.cpp	/^void BrassPlus::ViewAcct() const$/;"	f	class:BrassPlus	signature:() const
+BrassPlus::ViewAcct	brass.h	/^	virtual void ViewAcct() const;$/;"	p	class:BrassPlus	access:public	signature:() const
+BrassPlus::Withdraw	acctabc.cpp	/^void BrassPlus::Withdraw(double amt)$/;"	f	class:BrassPlus	signature:(double amt)
+BrassPlus::Withdraw	acctabc.h	/^	virtual void Withdraw(double amt);$/;"	p	class:BrassPlus	access:public	signature:(double amt)
+BrassPlus::Withdraw	brass.cpp	/^void BrassPlus::Withdraw(double amt)$/;"	f	class:BrassPlus	signature:(double amt)
+BrassPlus::Withdraw	brass.h	/^	virtual void Withdraw(double amt);$/;"	p	class:BrassPlus	access:public	signature:(double amt)
+BrassPlus::maxLoan	acctabc.h	/^	double maxLoan;$/;"	m	class:BrassPlus	access:private
+BrassPlus::maxLoan	brass.h	/^	double maxLoan;$/;"	m	class:BrassPlus	access:private
+BrassPlus::owesBank	acctabc.h	/^	double owesBank;$/;"	m	class:BrassPlus	access:private
+BrassPlus::owesBank	brass.h	/^	double owesBank;$/;"	m	class:BrassPlus	access:private
+BrassPlus::rate	acctabc.h	/^	double rate;$/;"	m	class:BrassPlus	access:private
+BrassPlus::rate	brass.h	/^	double rate;$/;"	m	class:BrassPlus	access:private
+Bravo	ass1.cpp	/^void Bravo(const Cd & disk)$/;"	f	signature:(const Cd & disk)
+Bravo	ass1.cpp	/^void Bravo(const Cd & disk);$/;"	p	file:	signature:(const Cd & disk)
+Bravo	ass2.cpp	/^void Bravo(const Cd & disk)$/;"	f	signature:(const Cd & disk)
+Bravo	ass2.cpp	/^void Bravo(const Cd & disk);$/;"	p	file:	signature:(const Cd & disk)
+CD_H_	ass1_cd.h	2;"	d
+CD_H_	ass2_cd.h	2;"	d
+CLIENTS	usebrass2.cpp	/^const int CLIENTS = 4;$/;"	v
+CLIENTS	usebrass3.cpp	/^const int CLIENTS = 4;$/;"	v
+COL_LEN	ass3_dma.h	/^	enum {COL_LEN = 40};$/;"	e	enum:lacksDMA::__anon1
+COL_LEN	dma.h	/^	enum {COL_LEN = 40};$/;"	e	enum:lacksDMA::__anon2
+Cd	ass1_cd.cpp	/^Cd::Cd()$/;"	f	class:Cd	signature:()
+Cd	ass1_cd.cpp	/^Cd::Cd(const Cd & d)$/;"	f	class:Cd	signature:(const Cd & d)
+Cd	ass1_cd.cpp	/^Cd::Cd(const char * s1, const char * s2, int n, double x)$/;"	f	class:Cd	signature:(const char * s1, const char * s2, int n, double x)
+Cd	ass1_cd.h	/^	Cd();$/;"	p	class:Cd	access:public	signature:()
+Cd	ass1_cd.h	/^	Cd(const Cd & d);$/;"	p	class:Cd	access:public	signature:(const Cd & d)
+Cd	ass1_cd.h	/^	Cd(const char * s1, const char * s2, int n, double x);$/;"	p	class:Cd	access:public	signature:(const char * s1, const char * s2, int n, double x)
+Cd	ass1_cd.h	/^class Cd$/;"	c
+Cd	ass2_cd.cpp	/^Cd::Cd()$/;"	f	class:Cd	signature:()
+Cd	ass2_cd.cpp	/^Cd::Cd(const Cd & d)$/;"	f	class:Cd	signature:(const Cd & d)
+Cd	ass2_cd.cpp	/^Cd::Cd(const char * s1, const char * s2, int n, double x)$/;"	f	class:Cd	signature:(const char * s1, const char * s2, int n, double x)
+Cd	ass2_cd.h	/^	Cd();$/;"	p	class:Cd	access:public	signature:()
+Cd	ass2_cd.h	/^	Cd(const Cd & d);$/;"	p	class:Cd	access:public	signature:(const Cd & d)
+Cd	ass2_cd.h	/^	Cd(const char * s1, const char * s2, int n, double x);$/;"	p	class:Cd	access:public	signature:(const char * s1, const char * s2, int n, double x)
+Cd	ass2_cd.h	/^class Cd$/;"	c
+Cd::Cd	ass1_cd.cpp	/^Cd::Cd()$/;"	f	class:Cd	signature:()
+Cd::Cd	ass1_cd.cpp	/^Cd::Cd(const Cd & d)$/;"	f	class:Cd	signature:(const Cd & d)
+Cd::Cd	ass1_cd.cpp	/^Cd::Cd(const char * s1, const char * s2, int n, double x)$/;"	f	class:Cd	signature:(const char * s1, const char * s2, int n, double x)
+Cd::Cd	ass1_cd.h	/^	Cd();$/;"	p	class:Cd	access:public	signature:()
+Cd::Cd	ass1_cd.h	/^	Cd(const Cd & d);$/;"	p	class:Cd	access:public	signature:(const Cd & d)
+Cd::Cd	ass1_cd.h	/^	Cd(const char * s1, const char * s2, int n, double x);$/;"	p	class:Cd	access:public	signature:(const char * s1, const char * s2, int n, double x)
+Cd::Cd	ass2_cd.cpp	/^Cd::Cd()$/;"	f	class:Cd	signature:()
+Cd::Cd	ass2_cd.cpp	/^Cd::Cd(const Cd & d)$/;"	f	class:Cd	signature:(const Cd & d)
+Cd::Cd	ass2_cd.cpp	/^Cd::Cd(const char * s1, const char * s2, int n, double x)$/;"	f	class:Cd	signature:(const char * s1, const char * s2, int n, double x)
+Cd::Cd	ass2_cd.h	/^	Cd();$/;"	p	class:Cd	access:public	signature:()
+Cd::Cd	ass2_cd.h	/^	Cd(const Cd & d);$/;"	p	class:Cd	access:public	signature:(const Cd & d)
+Cd::Cd	ass2_cd.h	/^	Cd(const char * s1, const char * s2, int n, double x);$/;"	p	class:Cd	access:public	signature:(const char * s1, const char * s2, int n, double x)
+Cd::Report	ass1_cd.cpp	/^void Cd::Report() const$/;"	f	class:Cd	signature:() const
+Cd::Report	ass1_cd.h	/^	virtual void Report() const;$/;"	p	class:Cd	access:public	signature:() const
+Cd::Report	ass2_cd.cpp	/^void Cd::Report() const$/;"	f	class:Cd	signature:() const
+Cd::Report	ass2_cd.h	/^	virtual void Report() const;$/;"	p	class:Cd	access:public	signature:() const
+Cd::label	ass1_cd.h	/^	char label[20];$/;"	m	class:Cd	access:private
+Cd::label	ass2_cd.h	/^	char * label;$/;"	m	class:Cd	access:private
+Cd::operator =	ass1_cd.cpp	/^Cd & Cd::operator=(const Cd & d)$/;"	f	class:Cd	signature:(const Cd & d)
+Cd::operator =	ass1_cd.h	/^	Cd & operator=(const Cd & d);$/;"	p	class:Cd	access:public	signature:(const Cd & d)
+Cd::operator =	ass2_cd.cpp	/^Cd & Cd::operator=(const Cd & d)$/;"	f	class:Cd	signature:(const Cd & d)
+Cd::operator =	ass2_cd.h	/^	Cd & operator=(const Cd & d);$/;"	p	class:Cd	access:public	signature:(const Cd & d)
+Cd::performers	ass1_cd.h	/^	char performers[50];$/;"	m	class:Cd	access:private
+Cd::performers	ass2_cd.h	/^	char * performers;$/;"	m	class:Cd	access:private
+Cd::playtime	ass1_cd.h	/^	double playtime;$/;"	m	class:Cd	access:private
+Cd::playtime	ass2_cd.h	/^	double playtime;$/;"	m	class:Cd	access:private
+Cd::selections	ass1_cd.h	/^	int selections;$/;"	m	class:Cd	access:private
+Cd::selections	ass2_cd.h	/^	int selections;$/;"	m	class:Cd	access:private
+Cd::~Cd	ass1_cd.cpp	/^Cd::~Cd()$/;"	f	class:Cd	signature:()
+Cd::~Cd	ass1_cd.h	/^	virtual ~Cd();$/;"	p	class:Cd	access:public	signature:()
+Cd::~Cd	ass2_cd.cpp	/^Cd::~Cd()$/;"	f	class:Cd	signature:()
+Cd::~Cd	ass2_cd.h	/^	virtual ~Cd();$/;"	p	class:Cd	access:public	signature:()
+Classic	ass1_cd.cpp	/^Classic::Classic()$/;"	f	class:Classic	signature:()
+Classic	ass1_cd.cpp	/^Classic::Classic(const Classic & c)$/;"	f	class:Classic	signature:(const Classic & c)
+Classic	ass1_cd.cpp	/^Classic::Classic(const char * s0, const Cd & d)$/;"	f	class:Classic	signature:(const char * s0, const Cd & d)
+Classic	ass1_cd.cpp	/^Classic::Classic(const char * s0, const char * s1, const char * s2, int n, double x)$/;"	f	class:Classic	signature:(const char * s0, const char * s1, const char * s2, int n, double x)
+Classic	ass1_cd.h	/^	Classic();$/;"	p	class:Classic	access:public	signature:()
+Classic	ass1_cd.h	/^	Classic(const Classic & c);$/;"	p	class:Classic	access:public	signature:(const Classic & c)
+Classic	ass1_cd.h	/^	Classic(const char * s0, const Cd & d);$/;"	p	class:Classic	access:public	signature:(const char * s0, const Cd & d)
+Classic	ass1_cd.h	/^	Classic(const char * s0, const char * s1, const char * s2, int n, double x);$/;"	p	class:Classic	access:public	signature:(const char * s0, const char * s1, const char * s2, int n, double x)
+Classic	ass1_cd.h	/^class Classic : public Cd$/;"	c	inherits:Cd
+Classic	ass2_cd.cpp	/^Classic::Classic()$/;"	f	class:Classic	signature:()
+Classic	ass2_cd.cpp	/^Classic::Classic(const Classic & c)$/;"	f	class:Classic	signature:(const Classic & c)
+Classic	ass2_cd.cpp	/^Classic::Classic(const char * s0, const Cd & d)$/;"	f	class:Classic	signature:(const char * s0, const Cd & d)
+Classic	ass2_cd.cpp	/^Classic::Classic(const char * s0, const char * s1, const char * s2, int n, double x)$/;"	f	class:Classic	signature:(const char * s0, const char * s1, const char * s2, int n, double x)
+Classic	ass2_cd.h	/^	Classic();$/;"	p	class:Classic	access:public	signature:()
+Classic	ass2_cd.h	/^	Classic(const Classic & c);$/;"	p	class:Classic	access:public	signature:(const Classic & c)
+Classic	ass2_cd.h	/^	Classic(const char * s0, const Cd & d);$/;"	p	class:Classic	access:public	signature:(const char * s0, const Cd & d)
+Classic	ass2_cd.h	/^	Classic(const char * s0, const char * s1, const char * s2, int n, double x);$/;"	p	class:Classic	access:public	signature:(const char * s0, const char * s1, const char * s2, int n, double x)
+Classic	ass2_cd.h	/^class Classic : public Cd$/;"	c	inherits:Cd
+Classic::Classic	ass1_cd.cpp	/^Classic::Classic()$/;"	f	class:Classic	signature:()
+Classic::Classic	ass1_cd.cpp	/^Classic::Classic(const Classic & c)$/;"	f	class:Classic	signature:(const Classic & c)
+Classic::Classic	ass1_cd.cpp	/^Classic::Classic(const char * s0, const Cd & d)$/;"	f	class:Classic	signature:(const char * s0, const Cd & d)
+Classic::Classic	ass1_cd.cpp	/^Classic::Classic(const char * s0, const char * s1, const char * s2, int n, double x)$/;"	f	class:Classic	signature:(const char * s0, const char * s1, const char * s2, int n, double x)
+Classic::Classic	ass1_cd.h	/^	Classic();$/;"	p	class:Classic	access:public	signature:()
+Classic::Classic	ass1_cd.h	/^	Classic(const Classic & c);$/;"	p	class:Classic	access:public	signature:(const Classic & c)
+Classic::Classic	ass1_cd.h	/^	Classic(const char * s0, const Cd & d);$/;"	p	class:Classic	access:public	signature:(const char * s0, const Cd & d)
+Classic::Classic	ass1_cd.h	/^	Classic(const char * s0, const char * s1, const char * s2, int n, double x);$/;"	p	class:Classic	access:public	signature:(const char * s0, const char * s1, const char * s2, int n, double x)
+Classic::Classic	ass2_cd.cpp	/^Classic::Classic()$/;"	f	class:Classic	signature:()
+Classic::Classic	ass2_cd.cpp	/^Classic::Classic(const Classic & c)$/;"	f	class:Classic	signature:(const Classic & c)
+Classic::Classic	ass2_cd.cpp	/^Classic::Classic(const char * s0, const Cd & d)$/;"	f	class:Classic	signature:(const char * s0, const Cd & d)
+Classic::Classic	ass2_cd.cpp	/^Classic::Classic(const char * s0, const char * s1, const char * s2, int n, double x)$/;"	f	class:Classic	signature:(const char * s0, const char * s1, const char * s2, int n, double x)
+Classic::Classic	ass2_cd.h	/^	Classic();$/;"	p	class:Classic	access:public	signature:()
+Classic::Classic	ass2_cd.h	/^	Classic(const Classic & c);$/;"	p	class:Classic	access:public	signature:(const Classic & c)
+Classic::Classic	ass2_cd.h	/^	Classic(const char * s0, const Cd & d);$/;"	p	class:Classic	access:public	signature:(const char * s0, const Cd & d)
+Classic::Classic	ass2_cd.h	/^	Classic(const char * s0, const char * s1, const char * s2, int n, double x);$/;"	p	class:Classic	access:public	signature:(const char * s0, const char * s1, const char * s2, int n, double x)
+Classic::Report	ass1_cd.cpp	/^void Classic::Report() const$/;"	f	class:Classic	signature:() const
+Classic::Report	ass1_cd.h	/^	void Report() const;$/;"	p	class:Classic	access:public	signature:() const
+Classic::Report	ass2_cd.cpp	/^void Classic::Report() const$/;"	f	class:Classic	signature:() const
+Classic::Report	ass2_cd.h	/^	void Report() const;$/;"	p	class:Classic	access:public	signature:() const
+Classic::operator =	ass1_cd.cpp	/^Classic & Classic::operator=(const Classic & c)$/;"	f	class:Classic	signature:(const Classic & c)
+Classic::operator =	ass1_cd.h	/^	Classic & operator=(const Classic & c);$/;"	p	class:Classic	access:public	signature:(const Classic & c)
+Classic::operator =	ass2_cd.cpp	/^Classic & Classic::operator=(const Classic & c)$/;"	f	class:Classic	signature:(const Classic & c)
+Classic::operator =	ass2_cd.h	/^	Classic & operator=(const Classic & c);$/;"	p	class:Classic	access:public	signature:(const Classic & c)
+Classic::works	ass1_cd.h	/^	char works[50];$/;"	m	class:Classic	access:private
+Classic::works	ass2_cd.h	/^	char * works;$/;"	m	class:Classic	access:private
+Classic::~Classic	ass1_cd.cpp	/^Classic::~Classic()$/;"	f	class:Classic	signature:()
+Classic::~Classic	ass1_cd.h	/^	~Classic();$/;"	p	class:Classic	access:public	signature:()
+Classic::~Classic	ass2_cd.cpp	/^Classic::~Classic()$/;"	f	class:Classic	signature:()
+Classic::~Classic	ass2_cd.h	/^	~Classic();$/;"	p	class:Classic	access:public	signature:()
+DMA_H_	ass3_dma.h	4;"	d
+DMA_H_	dma.h	4;"	d
+Deposit	acctabc.cpp	/^void AcctABC::Deposit(double amt)$/;"	f	class:AcctABC	signature:(double amt)
+Deposit	acctabc.h	/^	void Deposit(double amt);$/;"	p	class:AcctABC	access:public	signature:(double amt)
+Deposit	brass.cpp	/^void Brass::Deposit(double amt)$/;"	f	class:Brass	signature:(double amt)
+Deposit	brass.h	/^	void Deposit(double amt);$/;"	p	class:Brass	access:public	signature:(double amt)
+Formatting	acctabc.h	/^	struct Formatting$/;"	s	class:AcctABC	access:protected
+FullName	acctabc.h	/^	const std::string & FullName() const {return fullName; }$/;"	f	class:AcctABC	access:protected	signature:() const
+HasTable	tabtenn0.h	/^	bool HasTable() const {return hasTable; }$/;"	f	class:TableTennisPlayer	access:public	signature:() const
+HasTable	tabtenn1.h	/^	bool HasTable() const {return hasTable; }$/;"	f	class:TableTennisPlayer	access:public	signature:() const
+Name	tabtenn0.cpp	/^void TableTennisPlayer::Name() const$/;"	f	class:TableTennisPlayer	signature:() const
+Name	tabtenn0.h	/^	void Name() const;$/;"	p	class:TableTennisPlayer	access:public	signature:() const
+Name	tabtenn1.cpp	/^void TableTennisPlayer::Name() const$/;"	f	class:TableTennisPlayer	signature:() const
+Name	tabtenn1.h	/^	void Name() const;$/;"	p	class:TableTennisPlayer	access:public	signature:() const
+OwesBank	brass.h	/^	void OwesBank() {owesBank = 0; }$/;"	f	class:BrassPlus	access:public	signature:()
+RatedPlayer	tabtenn1.cpp	/^RatedPlayer::RatedPlayer(unsigned int r, const TableTennisPlayer & tp) : TableTennisPlayer(tp), rating(r)$/;"	f	class:RatedPlayer	signature:(unsigned int r, const TableTennisPlayer & tp)
+RatedPlayer	tabtenn1.cpp	/^RatedPlayer::RatedPlayer(unsigned int r, const string & fn, $/;"	f	class:RatedPlayer	signature:(unsigned int r, const string & fn, const string & ln, bool ht)
+RatedPlayer	tabtenn1.h	/^	RatedPlayer(unsigned int r = 0, const string & fn = "none", $/;"	p	class:RatedPlayer	access:public	signature:(unsigned int r = 0, const string & fn = Ó, const string & ln = Ó, bool ht = false)
+RatedPlayer	tabtenn1.h	/^	RatedPlayer(unsigned int r, const TableTennisPlayer & tp);$/;"	p	class:RatedPlayer	access:public	signature:(unsigned int r, const TableTennisPlayer & tp)
+RatedPlayer	tabtenn1.h	/^class RatedPlayer : public TableTennisPlayer$/;"	c	inherits:TableTennisPlayer
+RatedPlayer::RatedPlayer	tabtenn1.cpp	/^RatedPlayer::RatedPlayer(unsigned int r, const TableTennisPlayer & tp) : TableTennisPlayer(tp), rating(r)$/;"	f	class:RatedPlayer	signature:(unsigned int r, const TableTennisPlayer & tp)
+RatedPlayer::RatedPlayer	tabtenn1.cpp	/^RatedPlayer::RatedPlayer(unsigned int r, const string & fn, $/;"	f	class:RatedPlayer	signature:(unsigned int r, const string & fn, const string & ln, bool ht)
+RatedPlayer::RatedPlayer	tabtenn1.h	/^	RatedPlayer(unsigned int r = 0, const string & fn = "none", $/;"	p	class:RatedPlayer	access:public	signature:(unsigned int r = 0, const string & fn = Ó, const string & ln = Ó, bool ht = false)
+RatedPlayer::RatedPlayer	tabtenn1.h	/^	RatedPlayer(unsigned int r, const TableTennisPlayer & tp);$/;"	p	class:RatedPlayer	access:public	signature:(unsigned int r, const TableTennisPlayer & tp)
+RatedPlayer::Rating	tabtenn1.h	/^	unsigned int Rating() {return rating; }$/;"	f	class:RatedPlayer	access:public	signature:()
+RatedPlayer::ResetRating	tabtenn1.h	/^	void ResetRating(unsigned int r) {rating = r; }$/;"	f	class:RatedPlayer	access:public	signature:(unsigned int r)
+RatedPlayer::rating	tabtenn1.h	/^	unsigned int rating;$/;"	m	class:RatedPlayer	access:private
+Rating	tabtenn1.h	/^	unsigned int Rating() {return rating; }$/;"	f	class:RatedPlayer	access:public	signature:()
+Report	ass1_cd.cpp	/^void Cd::Report() const$/;"	f	class:Cd	signature:() const
+Report	ass1_cd.cpp	/^void Classic::Report() const$/;"	f	class:Classic	signature:() const
+Report	ass1_cd.h	/^	virtual void Report() const;$/;"	p	class:Cd	access:public	signature:() const
+Report	ass1_cd.h	/^	void Report() const;$/;"	p	class:Classic	access:public	signature:() const
+Report	ass2_cd.cpp	/^void Cd::Report() const$/;"	f	class:Cd	signature:() const
+Report	ass2_cd.cpp	/^void Classic::Report() const$/;"	f	class:Classic	signature:() const
+Report	ass2_cd.h	/^	virtual void Report() const;$/;"	p	class:Cd	access:public	signature:() const
+Report	ass2_cd.h	/^	void Report() const;$/;"	p	class:Classic	access:public	signature:() const
+ResetMax	acctabc.h	/^	void ResetMax(double m) {maxLoan = m; }$/;"	f	class:BrassPlus	access:public	signature:(double m)
+ResetMax	brass.h	/^	void ResetMax(double m) {maxLoan = m; }$/;"	f	class:BrassPlus	access:public	signature:(double m)
+ResetOwes	acctabc.h	/^	void ResetOwes() {owesBank = 0; }$/;"	f	class:BrassPlus	access:public	signature:()
+ResetRate	acctabc.h	/^	void ResetRate(double r) {rate = r; }$/;"	f	class:BrassPlus	access:public	signature:(double r)
+ResetRate	brass.h	/^	void ResetRate(double r) {rate = r; }$/;"	f	class:BrassPlus	access:public	signature:(double r)
+ResetRating	tabtenn1.h	/^	void ResetRating(unsigned int r) {rating = r; }$/;"	f	class:RatedPlayer	access:public	signature:(unsigned int r)
+ResetTable	tabtenn0.h	/^	void ResetTable(bool v) {hasTable = v; }$/;"	f	class:TableTennisPlayer	access:public	signature:(bool v)
+ResetTable	tabtenn1.h	/^	void ResetTable(bool v) {hasTable = v; }$/;"	f	class:TableTennisPlayer	access:public	signature:(bool v)
+Restore	acctabc.cpp	/^void AcctABC::Restore(Formatting & f) const$/;"	f	class:AcctABC	signature:(Formatting & f) const
+Restore	acctabc.h	/^	void Restore(Formatting & f) const;$/;"	p	class:AcctABC	access:protected	signature:(Formatting & f) const
+SetFormat	acctabc.cpp	/^AcctABC::Formatting AcctABC::SetFormat() const$/;"	f	class:AcctABC	signature:() const
+SetFormat	acctabc.h	/^	Formatting SetFormat() const;$/;"	p	class:AcctABC	access:protected	signature:() const
+TABTENN0_H_	tabtenn0.h	3;"	d
+TABTENN1_H_	tabtenn1.h	3;"	d
+TableTennisPlayer	tabtenn0.cpp	/^TableTennisPlayer::TableTennisPlayer(const string & fn, const string & ln, $/;"	f	class:TableTennisPlayer	signature:(const string & fn, const string & ln, bool ht)
+TableTennisPlayer	tabtenn0.h	/^	TableTennisPlayer(const string & fn = "none", const string & ln = "none", bool ht = false);$/;"	p	class:TableTennisPlayer	access:public	signature:(const string & fn = Ó, const string & ln = Ó, bool ht = false)
+TableTennisPlayer	tabtenn0.h	/^class TableTennisPlayer$/;"	c
+TableTennisPlayer	tabtenn1.cpp	/^TableTennisPlayer::TableTennisPlayer(const string & fn, const string & ln, $/;"	f	class:TableTennisPlayer	signature:(const string & fn, const string & ln, bool ht)
+TableTennisPlayer	tabtenn1.h	/^	TableTennisPlayer(const string & fn = "none", const string & ln = "none", bool ht = false);$/;"	p	class:TableTennisPlayer	access:public	signature:(const string & fn = Ó, const string & ln = Ó, bool ht = false)
+TableTennisPlayer	tabtenn1.h	/^class TableTennisPlayer$/;"	c
+TableTennisPlayer::HasTable	tabtenn0.h	/^	bool HasTable() const {return hasTable; }$/;"	f	class:TableTennisPlayer	access:public	signature:() const
+TableTennisPlayer::HasTable	tabtenn1.h	/^	bool HasTable() const {return hasTable; }$/;"	f	class:TableTennisPlayer	access:public	signature:() const
+TableTennisPlayer::Name	tabtenn0.cpp	/^void TableTennisPlayer::Name() const$/;"	f	class:TableTennisPlayer	signature:() const
+TableTennisPlayer::Name	tabtenn0.h	/^	void Name() const;$/;"	p	class:TableTennisPlayer	access:public	signature:() const
+TableTennisPlayer::Name	tabtenn1.cpp	/^void TableTennisPlayer::Name() const$/;"	f	class:TableTennisPlayer	signature:() const
+TableTennisPlayer::Name	tabtenn1.h	/^	void Name() const;$/;"	p	class:TableTennisPlayer	access:public	signature:() const
+TableTennisPlayer::ResetTable	tabtenn0.h	/^	void ResetTable(bool v) {hasTable = v; }$/;"	f	class:TableTennisPlayer	access:public	signature:(bool v)
+TableTennisPlayer::ResetTable	tabtenn1.h	/^	void ResetTable(bool v) {hasTable = v; }$/;"	f	class:TableTennisPlayer	access:public	signature:(bool v)
+TableTennisPlayer::TableTennisPlayer	tabtenn0.cpp	/^TableTennisPlayer::TableTennisPlayer(const string & fn, const string & ln, $/;"	f	class:TableTennisPlayer	signature:(const string & fn, const string & ln, bool ht)
+TableTennisPlayer::TableTennisPlayer	tabtenn0.h	/^	TableTennisPlayer(const string & fn = "none", const string & ln = "none", bool ht = false);$/;"	p	class:TableTennisPlayer	access:public	signature:(const string & fn = Ó, const string & ln = Ó, bool ht = false)
+TableTennisPlayer::TableTennisPlayer	tabtenn1.cpp	/^TableTennisPlayer::TableTennisPlayer(const string & fn, const string & ln, $/;"	f	class:TableTennisPlayer	signature:(const string & fn, const string & ln, bool ht)
+TableTennisPlayer::TableTennisPlayer	tabtenn1.h	/^	TableTennisPlayer(const string & fn = "none", const string & ln = "none", bool ht = false);$/;"	p	class:TableTennisPlayer	access:public	signature:(const string & fn = Ó, const string & ln = Ó, bool ht = false)
+TableTennisPlayer::firstname	tabtenn0.h	/^	string firstname;$/;"	m	class:TableTennisPlayer	access:private
+TableTennisPlayer::firstname	tabtenn1.h	/^	string firstname;$/;"	m	class:TableTennisPlayer	access:private
+TableTennisPlayer::hasTable	tabtenn0.h	/^	bool hasTable;$/;"	m	class:TableTennisPlayer	access:private
+TableTennisPlayer::hasTable	tabtenn1.h	/^	bool hasTable;$/;"	m	class:TableTennisPlayer	access:private
+TableTennisPlayer::lastname	tabtenn0.h	/^	string lastname;$/;"	m	class:TableTennisPlayer	access:private
+TableTennisPlayer::lastname	tabtenn1.h	/^	string lastname;$/;"	m	class:TableTennisPlayer	access:private
+ViewAcct	acctabc.cpp	/^void Brass::ViewAcct() const$/;"	f	class:Brass	signature:() const
+ViewAcct	acctabc.cpp	/^void BrassPlus::ViewAcct() const$/;"	f	class:BrassPlus	signature:() const
+ViewAcct	acctabc.h	/^	virtual void ViewAcct() const = 0;$/;"	p	class:AcctABC	access:public	signature:() const
+ViewAcct	acctabc.h	/^	virtual void ViewAcct() const;$/;"	p	class:Brass	access:public	signature:() const
+ViewAcct	acctabc.h	/^	virtual void ViewAcct() const;$/;"	p	class:BrassPlus	access:public	signature:() const
+ViewAcct	brass.cpp	/^void Brass::ViewAcct() const$/;"	f	class:Brass	signature:() const
+ViewAcct	brass.cpp	/^void BrassPlus::ViewAcct() const$/;"	f	class:BrassPlus	signature:() const
+ViewAcct	brass.h	/^	virtual void ViewAcct() const;$/;"	p	class:Brass	access:public	signature:() const
+ViewAcct	brass.h	/^	virtual void ViewAcct() const;$/;"	p	class:BrassPlus	access:public	signature:() const
+Withdraw	acctabc.cpp	/^void AcctABC::Withdraw(double amt)$/;"	f	class:AcctABC	signature:(double amt)
+Withdraw	acctabc.cpp	/^void Brass::Withdraw(double amt)$/;"	f	class:Brass	signature:(double amt)
+Withdraw	acctabc.cpp	/^void BrassPlus::Withdraw(double amt)$/;"	f	class:BrassPlus	signature:(double amt)
+Withdraw	acctabc.h	/^	virtual void Withdraw(double amt) = 0;$/;"	p	class:AcctABC	access:public	signature:(double amt)
+Withdraw	acctabc.h	/^	virtual void Withdraw(double amt);$/;"	p	class:Brass	access:public	signature:(double amt)
+Withdraw	acctabc.h	/^	virtual void Withdraw(double amt);$/;"	p	class:BrassPlus	access:public	signature:(double amt)
+Withdraw	brass.cpp	/^void Brass::Withdraw(double amt)$/;"	f	class:Brass	signature:(double amt)
+Withdraw	brass.cpp	/^void BrassPlus::Withdraw(double amt)$/;"	f	class:BrassPlus	signature:(double amt)
+Withdraw	brass.h	/^	virtual void Withdraw(double amt);$/;"	p	class:Brass	access:public	signature:(double amt)
+Withdraw	brass.h	/^	virtual void Withdraw(double amt);$/;"	p	class:BrassPlus	access:public	signature:(double amt)
+abcDMA	ass3_dma.cpp	/^abcDMA::abcDMA(const abcDMA & rs)$/;"	f	class:abcDMA	signature:(const abcDMA & rs)
+abcDMA	ass3_dma.cpp	/^abcDMA::abcDMA(const char * l, int r)$/;"	f	class:abcDMA	signature:(const char * l, int r)
+abcDMA	ass3_dma.h	/^	abcDMA(const abcDMA & rs);$/;"	p	class:abcDMA	access:public	signature:(const abcDMA & rs)
+abcDMA	ass3_dma.h	/^	abcDMA(const char * l = nullptr, int r = 0);$/;"	p	class:abcDMA	access:public	signature:(const char * l = nullptr, int r = 0)
+abcDMA	ass3_dma.h	/^class abcDMA$/;"	c
+abcDMA::abcDMA	ass3_dma.cpp	/^abcDMA::abcDMA(const abcDMA & rs)$/;"	f	class:abcDMA	signature:(const abcDMA & rs)
+abcDMA::abcDMA	ass3_dma.cpp	/^abcDMA::abcDMA(const char * l, int r)$/;"	f	class:abcDMA	signature:(const char * l, int r)
+abcDMA::abcDMA	ass3_dma.h	/^	abcDMA(const abcDMA & rs);$/;"	p	class:abcDMA	access:public	signature:(const abcDMA & rs)
+abcDMA::abcDMA	ass3_dma.h	/^	abcDMA(const char * l = nullptr, int r = 0);$/;"	p	class:abcDMA	access:public	signature:(const char * l = nullptr, int r = 0)
+abcDMA::label	ass3_dma.h	/^	char * label;$/;"	m	class:abcDMA	access:private
+abcDMA::operator <<	ass3_dma.h	/^	friend std::ostream & operator<<(std::ostream & os, const abcDMA & as);$/;"	p	class:abcDMA	access:friend	signature:(std::ostream & os, const abcDMA & as)
+abcDMA::operator =	ass3_dma.cpp	/^abcDMA & abcDMA::operator=(const abcDMA & rs)$/;"	f	class:abcDMA	signature:(const abcDMA & rs)
+abcDMA::operator =	ass3_dma.h	/^	virtual abcDMA & operator=(const abcDMA & as);$/;"	p	class:abcDMA	access:public	signature:(const abcDMA & as)
+abcDMA::rating	ass3_dma.h	/^	int rating;$/;"	m	class:abcDMA	access:private
+abcDMA::~abcDMA	ass3_dma.cpp	/^abcDMA::~abcDMA()$/;"	f	class:abcDMA	signature:()
+abcDMA::~abcDMA	ass3_dma.h	/^	virtual ~abcDMA() = 0;$/;"	p	class:abcDMA	access:public	signature:()
+acctNum	acctabc.h	/^	long acctNum;$/;"	m	class:AcctABC	access:private
+acctNum	brass.h	/^	long acctNum;$/;"	m	class:Brass	access:private
+balance	acctabc.h	/^	double balance;$/;"	m	class:AcctABC	access:private
+balance	brass.h	/^	double balance;$/;"	m	class:Brass	access:private
+baseDMA	ass3_dma.h	/^	baseDMA(const baseDMA & rs) : abcDMA(rs) {};$/;"	f	class:baseDMA	access:public	signature:(const baseDMA & rs)
+baseDMA	ass3_dma.h	/^	baseDMA(const char * l = nullptr, int r = 0)$/;"	f	class:baseDMA	access:public	signature:(const char * l = nullptr, int r = 0)
+baseDMA	ass3_dma.h	/^class baseDMA : public abcDMA$/;"	c	inherits:abcDMA
+baseDMA	dma.cpp	/^baseDMA::baseDMA(const baseDMA & rs)$/;"	f	class:baseDMA	signature:(const baseDMA & rs)
+baseDMA	dma.cpp	/^baseDMA::baseDMA(const char * l, int r)$/;"	f	class:baseDMA	signature:(const char * l, int r)
+baseDMA	dma.h	/^	baseDMA(const baseDMA & rs);$/;"	p	class:baseDMA	access:public	signature:(const baseDMA & rs)
+baseDMA	dma.h	/^	baseDMA(const char * l = "null", int r = 0);$/;"	p	class:baseDMA	access:public	signature:(const char * l = Ó, int r = 0)
+baseDMA	dma.h	/^class baseDMA$/;"	c
+baseDMA::baseDMA	ass3_dma.h	/^	baseDMA(const baseDMA & rs) : abcDMA(rs) {};$/;"	f	class:baseDMA	access:public	signature:(const baseDMA & rs)
+baseDMA::baseDMA	ass3_dma.h	/^	baseDMA(const char * l = nullptr, int r = 0)$/;"	f	class:baseDMA	access:public	signature:(const char * l = nullptr, int r = 0)
+baseDMA::baseDMA	dma.cpp	/^baseDMA::baseDMA(const baseDMA & rs)$/;"	f	class:baseDMA	signature:(const baseDMA & rs)
+baseDMA::baseDMA	dma.cpp	/^baseDMA::baseDMA(const char * l, int r)$/;"	f	class:baseDMA	signature:(const char * l, int r)
+baseDMA::baseDMA	dma.h	/^	baseDMA(const baseDMA & rs);$/;"	p	class:baseDMA	access:public	signature:(const baseDMA & rs)
+baseDMA::baseDMA	dma.h	/^	baseDMA(const char * l = "null", int r = 0);$/;"	p	class:baseDMA	access:public	signature:(const char * l = Ó, int r = 0)
+baseDMA::lable	dma.h	/^	char * lable;$/;"	m	class:baseDMA	access:private
+baseDMA::operator <<	dma.h	/^	friend std::ostream & operator<<(std::ostream & os, const baseDMA & rs);$/;"	p	class:baseDMA	access:friend	signature:(std::ostream & os, const baseDMA & rs)
+baseDMA::operator =	ass3_dma.cpp	/^baseDMA & baseDMA::operator=(const baseDMA & rs)$/;"	f	class:baseDMA	signature:(const baseDMA & rs)
+baseDMA::operator =	ass3_dma.h	/^	virtual baseDMA & operator=(const baseDMA & rs);$/;"	p	class:baseDMA	access:public	signature:(const baseDMA & rs)
+baseDMA::operator =	dma.cpp	/^baseDMA & baseDMA::operator=(const baseDMA & rs)$/;"	f	class:baseDMA	signature:(const baseDMA & rs)
+baseDMA::operator =	dma.h	/^	baseDMA & operator=(const baseDMA & rs);$/;"	p	class:baseDMA	access:public	signature:(const baseDMA & rs)
+baseDMA::rating	dma.h	/^	int rating;$/;"	m	class:baseDMA	access:private
+baseDMA::~baseDMA	ass3_dma.h	/^	virtual ~baseDMA() {};$/;"	f	class:baseDMA	access:public	signature:()
+baseDMA::~baseDMA	dma.cpp	/^baseDMA::~baseDMA()$/;"	f	class:baseDMA	signature:()
+baseDMA::~baseDMA	dma.h	/^	virtual ~baseDMA();$/;"	p	class:baseDMA	access:public	signature:()
+color	ass3_dma.h	/^	char color[COL_LEN];$/;"	m	class:lacksDMA	access:private
+color	dma.h	/^	char color[COL_LEN];$/;"	m	class:lacksDMA	access:private
+firstname	tabtenn0.h	/^	string firstname;$/;"	m	class:TableTennisPlayer	access:private
+firstname	tabtenn1.h	/^	string firstname;$/;"	m	class:TableTennisPlayer	access:private
+flag	acctabc.h	/^		std::ios_base::fmtflags flag;$/;"	m	struct:AcctABC::Formatting	access:public
+format	brass.cpp	/^typedef std::ios_base::fmtflags format;$/;"	t	file:
+fullName	acctabc.h	/^	std::string fullName;$/;"	m	class:AcctABC	access:private
+fullName	brass.h	/^	std::string fullName;$/;"	m	class:Brass	access:private
+hasDMA	ass3_dma.cpp	/^hasDMA::hasDMA(const char * s, const baseDMA & rs)$/;"	f	class:hasDMA	signature:(const char * s, const baseDMA & rs)
+hasDMA	ass3_dma.cpp	/^hasDMA::hasDMA(const char * s, const char * l, int r)$/;"	f	class:hasDMA	signature:(const char * s, const char * l, int r)
+hasDMA	ass3_dma.cpp	/^hasDMA::hasDMA(const hasDMA & hs)$/;"	f	class:hasDMA	signature:(const hasDMA & hs)
+hasDMA	ass3_dma.h	/^	hasDMA(const char * s = nullptr, const char * l = nullptr, int r = 0);$/;"	p	class:hasDMA	access:public	signature:(const char * s = nullptr, const char * l = nullptr, int r = 0)
+hasDMA	ass3_dma.h	/^	hasDMA(const char * s, const baseDMA & rs);$/;"	p	class:hasDMA	access:public	signature:(const char * s, const baseDMA & rs)
+hasDMA	ass3_dma.h	/^	hasDMA(const hasDMA & rs);$/;"	p	class:hasDMA	access:public	signature:(const hasDMA & rs)
+hasDMA	ass3_dma.h	/^class hasDMA : public abcDMA$/;"	c	inherits:abcDMA
+hasDMA	dma.cpp	/^hasDMA::hasDMA(const char * s, const baseDMA & rs)$/;"	f	class:hasDMA	signature:(const char * s, const baseDMA & rs)
+hasDMA	dma.cpp	/^hasDMA::hasDMA(const char * s, const char * l, int r)$/;"	f	class:hasDMA	signature:(const char * s, const char * l, int r)
+hasDMA	dma.cpp	/^hasDMA::hasDMA(const hasDMA & hs)$/;"	f	class:hasDMA	signature:(const hasDMA & hs)
+hasDMA	dma.h	/^	hasDMA(const char * s = "none", const char * l = "null", int r = 0);$/;"	p	class:hasDMA	access:public	signature:(const char * s = Ó, const char * l = Ó, int r = 0)
+hasDMA	dma.h	/^	hasDMA(const char * s, const baseDMA & rs);$/;"	p	class:hasDMA	access:public	signature:(const char * s, const baseDMA & rs)
+hasDMA	dma.h	/^	hasDMA(const hasDMA & rs);$/;"	p	class:hasDMA	access:public	signature:(const hasDMA & rs)
+hasDMA	dma.h	/^class hasDMA : public baseDMA$/;"	c	inherits:baseDMA
+hasDMA::hasDMA	ass3_dma.cpp	/^hasDMA::hasDMA(const char * s, const baseDMA & rs)$/;"	f	class:hasDMA	signature:(const char * s, const baseDMA & rs)
+hasDMA::hasDMA	ass3_dma.cpp	/^hasDMA::hasDMA(const char * s, const char * l, int r)$/;"	f	class:hasDMA	signature:(const char * s, const char * l, int r)
+hasDMA::hasDMA	ass3_dma.cpp	/^hasDMA::hasDMA(const hasDMA & hs)$/;"	f	class:hasDMA	signature:(const hasDMA & hs)
+hasDMA::hasDMA	ass3_dma.h	/^	hasDMA(const char * s = nullptr, const char * l = nullptr, int r = 0);$/;"	p	class:hasDMA	access:public	signature:(const char * s = nullptr, const char * l = nullptr, int r = 0)
+hasDMA::hasDMA	ass3_dma.h	/^	hasDMA(const char * s, const baseDMA & rs);$/;"	p	class:hasDMA	access:public	signature:(const char * s, const baseDMA & rs)
+hasDMA::hasDMA	ass3_dma.h	/^	hasDMA(const hasDMA & rs);$/;"	p	class:hasDMA	access:public	signature:(const hasDMA & rs)
+hasDMA::hasDMA	dma.cpp	/^hasDMA::hasDMA(const char * s, const baseDMA & rs)$/;"	f	class:hasDMA	signature:(const char * s, const baseDMA & rs)
+hasDMA::hasDMA	dma.cpp	/^hasDMA::hasDMA(const char * s, const char * l, int r)$/;"	f	class:hasDMA	signature:(const char * s, const char * l, int r)
+hasDMA::hasDMA	dma.cpp	/^hasDMA::hasDMA(const hasDMA & hs)$/;"	f	class:hasDMA	signature:(const hasDMA & hs)
+hasDMA::hasDMA	dma.h	/^	hasDMA(const char * s = "none", const char * l = "null", int r = 0);$/;"	p	class:hasDMA	access:public	signature:(const char * s = Ó, const char * l = Ó, int r = 0)
+hasDMA::hasDMA	dma.h	/^	hasDMA(const char * s, const baseDMA & rs);$/;"	p	class:hasDMA	access:public	signature:(const char * s, const baseDMA & rs)
+hasDMA::hasDMA	dma.h	/^	hasDMA(const hasDMA & rs);$/;"	p	class:hasDMA	access:public	signature:(const hasDMA & rs)
+hasDMA::operator <<	ass3_dma.h	/^	friend std::ostream & operator<<(std::ostream & os, const hasDMA & rs);$/;"	p	class:hasDMA	access:friend	signature:(std::ostream & os, const hasDMA & rs)
+hasDMA::operator <<	dma.h	/^	friend std::ostream & operator<<(std::ostream & os, const hasDMA & rs);$/;"	p	class:hasDMA	access:friend	signature:(std::ostream & os, const hasDMA & rs)
+hasDMA::operator =	ass3_dma.cpp	/^hasDMA & hasDMA::operator=(const hasDMA & hs)$/;"	f	class:hasDMA	signature:(const hasDMA & hs)
+hasDMA::operator =	ass3_dma.h	/^	virtual hasDMA & operator=(const hasDMA & rs);$/;"	p	class:hasDMA	access:public	signature:(const hasDMA & rs)
+hasDMA::operator =	dma.cpp	/^hasDMA & hasDMA::operator=(const hasDMA & hs)$/;"	f	class:hasDMA	signature:(const hasDMA & hs)
+hasDMA::operator =	dma.h	/^	hasDMA & operator=(const hasDMA & rs);$/;"	p	class:hasDMA	access:public	signature:(const hasDMA & rs)
+hasDMA::style	ass3_dma.h	/^	char * style;$/;"	m	class:hasDMA	access:private
+hasDMA::style	dma.h	/^	char * style;$/;"	m	class:hasDMA	access:private
+hasDMA::~hasDMA	ass3_dma.cpp	/^hasDMA::~hasDMA()$/;"	f	class:hasDMA	signature:()
+hasDMA::~hasDMA	ass3_dma.h	/^	virtual ~hasDMA();$/;"	p	class:hasDMA	access:public	signature:()
+hasDMA::~hasDMA	dma.cpp	/^hasDMA::~hasDMA()$/;"	f	class:hasDMA	signature:()
+hasDMA::~hasDMA	dma.h	/^	~hasDMA();$/;"	p	class:hasDMA	access:public	signature:()
+hasTable	tabtenn0.h	/^	bool hasTable;$/;"	m	class:TableTennisPlayer	access:private
+hasTable	tabtenn1.h	/^	bool hasTable;$/;"	m	class:TableTennisPlayer	access:private
+label	ass1_cd.h	/^	char label[20];$/;"	m	class:Cd	access:private
+label	ass2_cd.h	/^	char * label;$/;"	m	class:Cd	access:private
+label	ass3_dma.h	/^	char * label;$/;"	m	class:abcDMA	access:private
+lable	dma.h	/^	char * lable;$/;"	m	class:baseDMA	access:private
+lacksDMA	ass3_dma.cpp	/^lacksDMA::lacksDMA(const char * c, const baseDMA & rs)$/;"	f	class:lacksDMA	signature:(const char * c, const baseDMA & rs)
+lacksDMA	ass3_dma.cpp	/^lacksDMA::lacksDMA(const char * c, const char * l, int r)$/;"	f	class:lacksDMA	signature:(const char * c, const char * l, int r)
+lacksDMA	ass3_dma.h	/^	lacksDMA(const char * c = nullptr, const char * l = nullptr,$/;"	p	class:lacksDMA	access:public	signature:(const char * c = nullptr, const char * l = nullptr, int r = 0)
+lacksDMA	ass3_dma.h	/^	lacksDMA(const char * c, const baseDMA & rs);$/;"	p	class:lacksDMA	access:public	signature:(const char * c, const baseDMA & rs)
+lacksDMA	ass3_dma.h	/^class lacksDMA : public abcDMA$/;"	c	inherits:abcDMA
+lacksDMA	dma.cpp	/^lacksDMA::lacksDMA(const char * c, const baseDMA & rs)$/;"	f	class:lacksDMA	signature:(const char * c, const baseDMA & rs)
+lacksDMA	dma.cpp	/^lacksDMA::lacksDMA(const char * c, const char * l, int r)$/;"	f	class:lacksDMA	signature:(const char * c, const char * l, int r)
+lacksDMA	dma.h	/^	lacksDMA(const char * c = "blank", const char * l = "null",$/;"	p	class:lacksDMA	access:public	signature:(const char * c = Ó, const char * l = Ó, int r = 0)
+lacksDMA	dma.h	/^	lacksDMA(const char * c, const baseDMA & rs);$/;"	p	class:lacksDMA	access:public	signature:(const char * c, const baseDMA & rs)
+lacksDMA	dma.h	/^class lacksDMA : public baseDMA$/;"	c	inherits:baseDMA
+lacksDMA::COL_LEN	ass3_dma.h	/^	enum {COL_LEN = 40};$/;"	e	enum:lacksDMA::__anon1
+lacksDMA::COL_LEN	dma.h	/^	enum {COL_LEN = 40};$/;"	e	enum:lacksDMA::__anon2
+lacksDMA::color	ass3_dma.h	/^	char color[COL_LEN];$/;"	m	class:lacksDMA	access:private
+lacksDMA::color	dma.h	/^	char color[COL_LEN];$/;"	m	class:lacksDMA	access:private
+lacksDMA::lacksDMA	ass3_dma.cpp	/^lacksDMA::lacksDMA(const char * c, const baseDMA & rs)$/;"	f	class:lacksDMA	signature:(const char * c, const baseDMA & rs)
+lacksDMA::lacksDMA	ass3_dma.cpp	/^lacksDMA::lacksDMA(const char * c, const char * l, int r)$/;"	f	class:lacksDMA	signature:(const char * c, const char * l, int r)
+lacksDMA::lacksDMA	ass3_dma.h	/^	lacksDMA(const char * c = nullptr, const char * l = nullptr,$/;"	p	class:lacksDMA	access:public	signature:(const char * c = nullptr, const char * l = nullptr, int r = 0)
+lacksDMA::lacksDMA	ass3_dma.h	/^	lacksDMA(const char * c, const baseDMA & rs);$/;"	p	class:lacksDMA	access:public	signature:(const char * c, const baseDMA & rs)
+lacksDMA::lacksDMA	dma.cpp	/^lacksDMA::lacksDMA(const char * c, const baseDMA & rs)$/;"	f	class:lacksDMA	signature:(const char * c, const baseDMA & rs)
+lacksDMA::lacksDMA	dma.cpp	/^lacksDMA::lacksDMA(const char * c, const char * l, int r)$/;"	f	class:lacksDMA	signature:(const char * c, const char * l, int r)
+lacksDMA::lacksDMA	dma.h	/^	lacksDMA(const char * c = "blank", const char * l = "null",$/;"	p	class:lacksDMA	access:public	signature:(const char * c = Ó, const char * l = Ó, int r = 0)
+lacksDMA::lacksDMA	dma.h	/^	lacksDMA(const char * c, const baseDMA & rs);$/;"	p	class:lacksDMA	access:public	signature:(const char * c, const baseDMA & rs)
+lacksDMA::operator <<	ass3_dma.h	/^	friend std::ostream & operator<<(std::ostream & os, const lacksDMA & rs);$/;"	p	class:lacksDMA	access:friend	signature:(std::ostream & os, const lacksDMA & rs)
+lacksDMA::operator <<	dma.h	/^	friend std::ostream & operator<<(std::ostream & os, const lacksDMA & rs);$/;"	p	class:lacksDMA	access:friend	signature:(std::ostream & os, const lacksDMA & rs)
+lacksDMA::~lacksDMA	ass3_dma.h	/^	virtual ~lacksDMA() {};$/;"	f	class:lacksDMA	access:public	signature:()
+lastname	tabtenn0.h	/^	string lastname;$/;"	m	class:TableTennisPlayer	access:private
+lastname	tabtenn1.h	/^	string lastname;$/;"	m	class:TableTennisPlayer	access:private
+main	ass1.cpp	/^int main()$/;"	f	signature:()
+main	ass2.cpp	/^int main()$/;"	f	signature:()
+main	ass3.cpp	/^int main()$/;"	f	signature:()
+main	usebrass1.cpp	/^int main()$/;"	f	signature:()
+main	usebrass2.cpp	/^int main()$/;"	f	signature:()
+main	usebrass3.cpp	/^int main()$/;"	f	signature:()
+main	usedma.cpp	/^int main()$/;"	f	signature:()
+main	usett0.cpp	/^int main( void )$/;"	f	signature:( void )
+main	usett1.cpp	/^int main( void )$/;"	f	signature:( void )
+maxLoan	acctabc.h	/^	double maxLoan;$/;"	m	class:BrassPlus	access:private
+maxLoan	brass.h	/^	double maxLoan;$/;"	m	class:BrassPlus	access:private
+operator <<	ass3_dma.cpp	/^std::ostream & operator<<(std::ostream & os, const abcDMA & rs)$/;"	f	signature:(std::ostream & os, const abcDMA & rs)
+operator <<	ass3_dma.cpp	/^std::ostream & operator<<(std::ostream & os, const hasDMA & hs)$/;"	f	signature:(std::ostream & os, const hasDMA & hs)
+operator <<	ass3_dma.cpp	/^std::ostream & operator<<(std::ostream & os, const lacksDMA & ls)$/;"	f	signature:(std::ostream & os, const lacksDMA & ls)
+operator <<	ass3_dma.h	/^	friend std::ostream & operator<<(std::ostream & os, const abcDMA & as);$/;"	p	class:abcDMA	access:friend	signature:(std::ostream & os, const abcDMA & as)
+operator <<	ass3_dma.h	/^	friend std::ostream & operator<<(std::ostream & os, const hasDMA & rs);$/;"	p	class:hasDMA	access:friend	signature:(std::ostream & os, const hasDMA & rs)
+operator <<	ass3_dma.h	/^	friend std::ostream & operator<<(std::ostream & os, const lacksDMA & rs);$/;"	p	class:lacksDMA	access:friend	signature:(std::ostream & os, const lacksDMA & rs)
+operator <<	dma.cpp	/^std::ostream & operator<<(std::ostream & os, const baseDMA & rs)$/;"	f	signature:(std::ostream & os, const baseDMA & rs)
+operator <<	dma.cpp	/^std::ostream & operator<<(std::ostream & os, const hasDMA & hs)$/;"	f	signature:(std::ostream & os, const hasDMA & hs)
+operator <<	dma.cpp	/^std::ostream & operator<<(std::ostream & os, const lacksDMA & ls)$/;"	f	signature:(std::ostream & os, const lacksDMA & ls)
+operator <<	dma.h	/^	friend std::ostream & operator<<(std::ostream & os, const baseDMA & rs);$/;"	p	class:baseDMA	access:friend	signature:(std::ostream & os, const baseDMA & rs)
+operator <<	dma.h	/^	friend std::ostream & operator<<(std::ostream & os, const hasDMA & rs);$/;"	p	class:hasDMA	access:friend	signature:(std::ostream & os, const hasDMA & rs)
+operator <<	dma.h	/^	friend std::ostream & operator<<(std::ostream & os, const lacksDMA & rs);$/;"	p	class:lacksDMA	access:friend	signature:(std::ostream & os, const lacksDMA & rs)
+operator =	ass1_cd.cpp	/^Cd & Cd::operator=(const Cd & d)$/;"	f	class:Cd	signature:(const Cd & d)
+operator =	ass1_cd.cpp	/^Classic & Classic::operator=(const Classic & c)$/;"	f	class:Classic	signature:(const Classic & c)
+operator =	ass1_cd.h	/^	Cd & operator=(const Cd & d);$/;"	p	class:Cd	access:public	signature:(const Cd & d)
+operator =	ass1_cd.h	/^	Classic & operator=(const Classic & c);$/;"	p	class:Classic	access:public	signature:(const Classic & c)
+operator =	ass2_cd.cpp	/^Cd & Cd::operator=(const Cd & d)$/;"	f	class:Cd	signature:(const Cd & d)
+operator =	ass2_cd.cpp	/^Classic & Classic::operator=(const Classic & c)$/;"	f	class:Classic	signature:(const Classic & c)
+operator =	ass2_cd.h	/^	Cd & operator=(const Cd & d);$/;"	p	class:Cd	access:public	signature:(const Cd & d)
+operator =	ass2_cd.h	/^	Classic & operator=(const Classic & c);$/;"	p	class:Classic	access:public	signature:(const Classic & c)
+operator =	ass3_dma.cpp	/^abcDMA & abcDMA::operator=(const abcDMA & rs)$/;"	f	class:abcDMA	signature:(const abcDMA & rs)
+operator =	ass3_dma.cpp	/^baseDMA & baseDMA::operator=(const baseDMA & rs)$/;"	f	class:baseDMA	signature:(const baseDMA & rs)
+operator =	ass3_dma.cpp	/^hasDMA & hasDMA::operator=(const hasDMA & hs)$/;"	f	class:hasDMA	signature:(const hasDMA & hs)
+operator =	ass3_dma.h	/^	virtual abcDMA & operator=(const abcDMA & as);$/;"	p	class:abcDMA	access:public	signature:(const abcDMA & as)
+operator =	ass3_dma.h	/^	virtual baseDMA & operator=(const baseDMA & rs);$/;"	p	class:baseDMA	access:public	signature:(const baseDMA & rs)
+operator =	ass3_dma.h	/^	virtual hasDMA & operator=(const hasDMA & rs);$/;"	p	class:hasDMA	access:public	signature:(const hasDMA & rs)
+operator =	dma.cpp	/^baseDMA & baseDMA::operator=(const baseDMA & rs)$/;"	f	class:baseDMA	signature:(const baseDMA & rs)
+operator =	dma.cpp	/^hasDMA & hasDMA::operator=(const hasDMA & hs)$/;"	f	class:hasDMA	signature:(const hasDMA & hs)
+operator =	dma.h	/^	baseDMA & operator=(const baseDMA & rs);$/;"	p	class:baseDMA	access:public	signature:(const baseDMA & rs)
+operator =	dma.h	/^	hasDMA & operator=(const hasDMA & rs);$/;"	p	class:hasDMA	access:public	signature:(const hasDMA & rs)
+owesBank	acctabc.h	/^	double owesBank;$/;"	m	class:BrassPlus	access:private
+owesBank	brass.h	/^	double owesBank;$/;"	m	class:BrassPlus	access:private
+performers	ass1_cd.h	/^	char performers[50];$/;"	m	class:Cd	access:private
+performers	ass2_cd.h	/^	char * performers;$/;"	m	class:Cd	access:private
+playtime	ass1_cd.h	/^	double playtime;$/;"	m	class:Cd	access:private
+playtime	ass2_cd.h	/^	double playtime;$/;"	m	class:Cd	access:private
+pr	acctabc.h	/^		std::streamsize pr;$/;"	m	struct:AcctABC::Formatting	access:public
+precis	brass.cpp	/^typedef std::streamsize precis;$/;"	t	file:
+rate	acctabc.h	/^	double rate;$/;"	m	class:BrassPlus	access:private
+rate	brass.h	/^	double rate;$/;"	m	class:BrassPlus	access:private
+rating	ass3_dma.h	/^	int rating;$/;"	m	class:abcDMA	access:private
+rating	dma.h	/^	int rating;$/;"	m	class:baseDMA	access:private
+rating	tabtenn1.h	/^	unsigned int rating;$/;"	m	class:RatedPlayer	access:private
+restore	brass.cpp	/^void restore(format f, precis p)$/;"	f	signature:(format f, precis p)
+restore	brass.cpp	/^void restore(format f, precis p);$/;"	p	file:	signature:(format f, precis p)
+selections	ass1_cd.h	/^	int selections;$/;"	m	class:Cd	access:private
+selections	ass2_cd.h	/^	int selections;$/;"	m	class:Cd	access:private
+setFormat	brass.cpp	/^format setFormat()$/;"	f	signature:()
+setFormat	brass.cpp	/^format setFormat();$/;"	p	file:	signature:()
+style	ass3_dma.h	/^	char * style;$/;"	m	class:hasDMA	access:private
+style	dma.h	/^	char * style;$/;"	m	class:hasDMA	access:private
+works	ass1_cd.h	/^	char works[50];$/;"	m	class:Classic	access:private
+works	ass2_cd.h	/^	char * works;$/;"	m	class:Classic	access:private
+~AcctABC	acctabc.h	/^	virtual ~AcctABC() {}$/;"	f	class:AcctABC	access:public	signature:()
+~Brass	acctabc.h	/^	virtual ~Brass() {}$/;"	f	class:Brass	access:public	signature:()
+~Brass	brass.h	/^	virtual ~Brass() {};$/;"	f	class:Brass	access:public	signature:()
+~Cd	ass1_cd.cpp	/^Cd::~Cd()$/;"	f	class:Cd	signature:()
+~Cd	ass1_cd.h	/^	virtual ~Cd();$/;"	p	class:Cd	access:public	signature:()
+~Cd	ass2_cd.cpp	/^Cd::~Cd()$/;"	f	class:Cd	signature:()
+~Cd	ass2_cd.h	/^	virtual ~Cd();$/;"	p	class:Cd	access:public	signature:()
+~Classic	ass1_cd.cpp	/^Classic::~Classic()$/;"	f	class:Classic	signature:()
+~Classic	ass1_cd.h	/^	~Classic();$/;"	p	class:Classic	access:public	signature:()
+~Classic	ass2_cd.cpp	/^Classic::~Classic()$/;"	f	class:Classic	signature:()
+~Classic	ass2_cd.h	/^	~Classic();$/;"	p	class:Classic	access:public	signature:()
+~abcDMA	ass3_dma.cpp	/^abcDMA::~abcDMA()$/;"	f	class:abcDMA	signature:()
+~abcDMA	ass3_dma.h	/^	virtual ~abcDMA() = 0;$/;"	p	class:abcDMA	access:public	signature:()
+~baseDMA	ass3_dma.h	/^	virtual ~baseDMA() {};$/;"	f	class:baseDMA	access:public	signature:()
+~baseDMA	dma.cpp	/^baseDMA::~baseDMA()$/;"	f	class:baseDMA	signature:()
+~baseDMA	dma.h	/^	virtual ~baseDMA();$/;"	p	class:baseDMA	access:public	signature:()
+~hasDMA	ass3_dma.cpp	/^hasDMA::~hasDMA()$/;"	f	class:hasDMA	signature:()
+~hasDMA	ass3_dma.h	/^	virtual ~hasDMA();$/;"	p	class:hasDMA	access:public	signature:()
+~hasDMA	dma.cpp	/^hasDMA::~hasDMA()$/;"	f	class:hasDMA	signature:()
+~hasDMA	dma.h	/^	~hasDMA();$/;"	p	class:hasDMA	access:public	signature:()
+~lacksDMA	ass3_dma.h	/^	virtual ~lacksDMA() {};$/;"	f	class:lacksDMA	access:public	signature:()

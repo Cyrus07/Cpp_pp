@@ -1,0 +1,9 @@
+a.out : main.o golf.o
+	g++ main.o golf.o -o a.out
+
+main.o : ass1.cpp golf.h
+	g++ -c ass1.cpp -o main.o
+golf.o : golf.h
+
+clean:
+	rm main.o golf.o

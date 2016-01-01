@@ -1,0 +1,10 @@
+obj = ass7.o ass7_plorg.o
+
+a.out : $(obj)
+	g++ $(obj) -o a.out
+
+ass7.o : ass7_plorg.h
+ass7_plorg.o : ass7_plorg.h
+
+clean:
+	rm $(obj) a.out

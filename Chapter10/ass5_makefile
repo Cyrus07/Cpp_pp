@@ -1,0 +1,10 @@
+obj = ass5.o stack.o
+
+a.out : $(obj)
+	g++ -std=c++11 $(obj) -o a.out
+
+ass5.o : ass5_customer.h stack.h
+stack.o : stack.h
+
+clean:
+	rm $(obj) a.out

@@ -1,0 +1,10 @@
+obj = ass5.o stonewt_v2.o
+
+a.out : $(obj)
+	g++ $(obj) -o a.out
+
+ass5.o : stonewt_v2.h
+stonewt_v2.o : stonewt_v2.h
+
+clean:
+	rm a.out $(obj)

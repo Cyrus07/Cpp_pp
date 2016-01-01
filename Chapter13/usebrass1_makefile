@@ -1,0 +1,10 @@
+obj = brass.o usebrass1.o
+
+a.out : $(obj) brass.h
+	g++ -std=c++11 $(obj) -o a.out
+
+usebrass1.o : brass.h
+brass1.o : brass.h
+
+clean:
+	rm $(obj) a.out

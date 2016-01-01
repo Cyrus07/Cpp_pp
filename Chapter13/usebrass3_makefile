@@ -1,0 +1,13 @@
+obj = main.o acctabc.o
+
+a.out : $(obj)
+	g++ -o a.out $(obj)
+
+main.o : usebrass3.cpp acctabc.h
+	g++ -g -c usebrass3.cpp -o main.o
+
+acctabc.o : acctabc.cpp acctabc.h
+	g++ -g -c acctabc.cpp
+
+clean :
+	rm $(obj) a.out

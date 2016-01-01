@@ -1,0 +1,9 @@
+a.out : main.o ass4_sale.o
+	g++ main.o ass4_sale.o -o a.out
+
+main.o : ass4.cpp ass4_sale.h
+	g++ -c ass4.cpp -o main.o
+ass4_sale.o : ass4_sale.h
+
+clean:
+	rm main.o ass4_sale.o
